@@ -82,7 +82,38 @@ https://github.com/user-attachments/assets/3390f781-607c-4522-95af-d2eded0188c9
 
 
 ***
-####  Real Time Sensor Data Acquisition and Transmission System
+###  UART Transmission with logic analyzer
+The Saleae Logic 2 software with a logic analyzer connected to an FPGA-based project (Mini VDSquadron Mini) to monitor UART (serial) communication.
+# Mini VDSquadron UART Transmission Test
+
+This repository contains a basic UART transmission implementation on the **Mini VDSquadron Mini FPGA** board. The project demonstrates how to send repeated UART characters (`0x4D` or `'M'`) from the FPGA and observe them using the **Saleae Logic Analyzer**.
+
+---
+
+## Project Overview
+
+- **Board**: Mini VDSquadron Mini (FPGA)
+- **Interface**: UART (Async Serial)
+- **Tool Used**: Saleae Logic 2 for signal capture and decoding
+- **Transmission**: Repeated `'M'` characters (`0x4D`) on TX line
+- **Channels Observed**: D0 (TX), others idle
+
+---
+
+## How It Works
+
+1. The FPGA is programmed to send the character `'M'` over UART at fixed time intervals.
+2. Saleae Logic Analyzer captures the waveform on the TX line (Channel D0).
+3. Async Serial analyzer decodes the signal as UART and displays the data.
+4. The output shows repeated transmission of `0x4D`, which is ASCII `'M'`.
+5. 
+## Output
+   ![Screenshot (1340)](https://github.com/user-attachments/assets/35ba9f66-a6ae-40ef-a1e2-e42f3ddd0e12)
+   ![Screenshot (1342)](https://github.com/user-attachments/assets/8085bf47-9bbf-4626-9e8c-a3b08960a40b)
+
+---
+
+##  Real Time Sensor Data Acquisition and Transmission System
 It shows an output in numeric telling us how far the optject is from the ultrasonic sensor implemented using the FPGA
 ```
     git clone https://github.com/Skandakm29/Real-Time-Sensor-Data-Acquisition-and-Transmission-System.git
