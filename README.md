@@ -59,11 +59,15 @@ Once the bitstream is built, upload it to the FPGA using:
 This step is to be repeated always so that the board is reporgrammed and the current program is only executed on the board.
 ***
 ### Usage of Each project:
-####  1.LED Blinking
+####  LED Blinking
 ```
 cd led_blinking
 make flash
 ```
+Demo Output:
+
+https://github.com/user-attachments/assets/6a583282-d703-44f7-b7d0-fa15cee8a5ca
+
 
 ***
 ####  UART Loopback
@@ -72,7 +76,29 @@ cd uart_loopback
 make flash
 sudo make terminal
 ```
+Demo Output:
+
+https://github.com/user-attachments/assets/3390f781-607c-4522-95af-d2eded0188c9
+
+
 ***
+####  Real Time Sensor Data Acquisition and Transmission System
+It shows an output in numeric telling us how far the optject is from the ultrasonic sensor implemented using the FPGA
+```
+    git clone https://github.com/Skandakm29/Real-Time-Sensor-Data-Acquisition-and-Transmission-System.git
+    cd "Real-Time-Sensor-Data-Acquisition-and-Transmission-System"
+    make build
+    sudo make flash
+    sudo make terminal
+```
+Terminal window:
+![{CEF982DB-66ED-48A7-8803-8BA215701DE4}](https://github.com/user-attachments/assets/cc20299f-f05e-40c1-ad3e-8c67db8e5c99)
+
+Demo Output:
+
+https://github.com/user-attachments/assets/4b63e907-3421-464c-b139-ec8c128850d0
+
+
 ### Issues faced
 ```
 sudo: picocom: command not found
