@@ -117,7 +117,7 @@ sudo apt install picocom
 I would like to express my gratitude to:  
 
 - **[Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)** for his valuable contributions to open-source VLSI education and FPGA learning resources.  
-- **[K M Skanda](https://www.linkedin.com/in/k-m-skanda-541a02291/)** for helping me learn and execute the above projects and spreading information of using the VSDSquadron FPGA mini.
+- **[K M Skanda](https://www.linkedin.com/in/k-m-skanda-541a02291/)** for helping me learn and execute the above projects and providing the required source codes to implent in the VSDSquadron FPGA mini.
 
 ## Connect with me
 **LinkedIn:** [Aviral Jain](https://www.linkedin.com/in/aviral-jain-492399255/)
